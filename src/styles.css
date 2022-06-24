@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    height: 100%;
+    max-width: 500px;
+    margin: auto;
+    justify-content: center;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.containter {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+.square {
+    border: 2px solid rgb(205, 221, 228);
+    min-width: 60px;
+    min-height: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(14, 13, 13);
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
