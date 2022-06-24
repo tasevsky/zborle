@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-grid',
@@ -7,18 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GridComponent implements OnInit {
 
+  @Input() letter?: string;
+  numOfSquares: number[] = [...Array(30).keys()]
+
   constructor() { }
 
   ngOnInit(): void {
-
-    const grid = document.getElementById("grid")!;
-    for (let index: number = 0; index < 30; index++) {
-      let square = document.createElement("div");
-      square.classList.add("square");
-      square.setAttribute("id", (index + 1).toString());
-      console.log(square)
-      grid.appendChild(square);
-    }
   }
 
 }

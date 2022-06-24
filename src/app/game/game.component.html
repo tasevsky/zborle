@@ -1,0 +1,48 @@
+<app-grid [letter]="currentLetter"></app-grid>
+<div id="keyboard-container">
+    <div class="keyboard-row">
+        <!-- <div *ngFor="let letter in lettersInRows0">
+            
+            <button>{{ letter }}</button>
+        </div> -->
+        <button data-key="љ" (click)="onLetter('љ')">љ</button>
+        <button data-key="њ" (click)="onLetter('њ')">њ</button>
+        <button data-key="е" (click)="onLetter('е')">е</button>
+        <button data-key="р" (click)="onLetter('р')">р</button>
+        <button data-key="т" (click)="onLetter('т')">т</button>
+        <button data-key="ѕ" (click)="onLetter('ѕ')">ѕ</button>
+        <button data-key="у" (click)="onLetter('у')">у</button>
+        <button data-key="и" (click)="onLetter('и')">и</button>
+        <button data-key="о" (click)="onLetter('о')">о</button>
+        <button data-key="п" (click)="onLetter('п')">п</button>
+        <button data-key="ш" (click)="onLetter('ш')">ш</button>
+        <button data-key="ѓ" (click)="onLetter('ѓ')">ѓ</button>
+        <button data-key="ж" (click)="onLetter('ж')">ж</button>
+    </div>
+    <div class="keyboard-row">
+        <div class="spacer-half"></div>
+        <button data-key="а" (click)="onLetter('а')">а</button>
+        <button data-key="с" (click)="onLetter('с')">с</button>
+        <button data-key="д" (click)="onLetter('д')">д</button>
+        <button data-key="ф" (click)="onLetter('ф')">ф</button>
+        <button data-key="г" (click)="onLetter('г')">г</button>
+        <button data-key="х" (click)="onLetter('х')">х</button>
+        <button data-key="ј" (click)="onLetter('ј')">ј</button>
+        <button data-key="к" (click)="onLetter('к')">к</button>
+        <button data-key="л" (click)="onLetter('л')">л</button>
+        <button data-key="ч" (click)="onLetter('ч')">ч</button>
+        <button data-key="ќ" (click)="onLetter('ќ')">ќ</button>
+        <div class="spacer-half"></div>
+    </div>
+    <div class="keyboard-row">
+        <button data-key="enter" class="wide-button">Ентер</button>
+        <button data-key="з" (click)="onLetter('з')">з</button>
+        <button data-key="џ" (click)="onLetter('џ')">џ</button>
+        <button data-key="ц" (click)="onLetter('ц')">ц</button>
+        <button data-key="в" (click)="onLetter('в')">в</button>
+        <button data-key="б" (click)="onLetter('б')">б</button>
+        <button data-key="н" (click)="onLetter('н')">н</button>
+        <button data-key="м" (click)="onLetter('м')">м</button>
+        <button data-key="del" class="wide-button">⌫</button>
+    </div>
+</div>

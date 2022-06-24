@@ -1,5 +1,7 @@
 <div id="grid-container">
     <div id="grid">
-
+        <div *ngFor="let n of numOfSquares" class="square" [attr.id]="n">
+            {{ letter }}
+        </div>
     </div>
 </div>
